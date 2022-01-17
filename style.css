@@ -1,0 +1,139 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 538px 200px 90px;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* Header */
+
+header {
+    display: grid;
+    grid-template-rows: 1fr 104px 82px 64px 1fr;
+    background: url('img/your_verse_hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 100%;
+    justify-items: center;
+}
+
+header .main-nav-container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+header ul {
+    display: grid;
+    grid-template-columns: repeat(8, 100px) 132px;
+    list-style-type: none;
+    padding-inline-start: 0;
+    height: 36px;
+    justify-content: center;
+}
+
+header li {
+    background: linear-gradient(#787878 0%, #8c8c8c 10%, #767676 40%, #707070 49%, #5e5e5e 50%, #777, 90%, #515151 100%);
+}
+
+header .nav1:hover {
+    cursor: pointer;
+    /*filter: brightness(0.7);*/
+    background: url('img/globalnav_text.png'), linear-gradient(#484848 0%, #5c5c5c 10%, #444 40%, #404040 49%, #2e2e2e 50%, #444, 90%, #212121 100%);
+    background-repeat: no-repeat;
+    background-position: 50% var(--pos);
+    border-right: 1px solid rgb(37, 37, 37);
+    border-left: 1px solid rgb(156, 151, 151);
+}
+
+header input {
+    background: inherit;
+}
+
+header li:first-child {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+header li:last-child {
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    display: grid;
+    align-content: center;
+    border-left: 1px solid rgb(156, 151, 151);
+}
+
+input[type=text] {
+    width: 80%;
+    border-radius: 15px;
+    margin-left: 8px;
+    background: url('img/outline_search_white_24dp.png') no-repeat;
+    background-size: 18px;
+}
+
+input[type=text]:focus {
+    outline: none;
+    background: white;
+}
+
+header .main-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+header .nav1 {
+    background: url('img/globalnav_text.png'), linear-gradient(#787878 0%, #8c8c8c 10%, #767676 40%, #707070 49%, #5e5e5e 50%, #777, 90%, #515151 100%);
+    background-repeat: no-repeat;
+    background-position: 50% var(--pos);
+    border-right: 1px solid rgb(37, 37, 37);
+    border-left: 1px solid rgb(156, 151, 151);
+}
+
+header .npic1 {
+    background: url('img/globalnav_text.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+}
+
+header .img1 {
+    object-position: 0 10px;
+}
+
+header .img3 {
+    object-position: 0 30px;
+}
+
+
+/* Aside */
+
+aside {
+    margin-top: 2px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2px;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 20px;
+    font-size: smaller;
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 20px 20px;
+    justify-content: center;
+    color: #6e6e6e;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: #0088cc;
+}
