@@ -7,6 +7,7 @@ body {
     grid-template-rows: 538px 200px 90px;
     width: 1440px;
     margin: 0 auto;
+    --swidth: 132px;
 }
 
 
@@ -29,7 +30,7 @@ header .main-nav-container {
 
 header ul {
     display: grid;
-    grid-template-columns: repeat(8, 100px) 132px;
+    grid-template-columns: repeat(8, 100px) var(--swidth);
     list-style-type: none;
     padding-inline-start: 0;
     height: 36px;
@@ -73,11 +74,14 @@ input[type=text] {
     margin-left: 8px;
     background: url('img/outline_search_white_24dp.png') no-repeat;
     background-size: 18px;
+    text-indent: 20px;
 }
 
 input[type=text]:focus {
     outline: none;
-    background: white;
+    background: url('img/outline_search_black_24dp.png') no-repeat, white;
+    background-size: 18px;
+    --swidth: 200px;
 }
 
 header .main-nav a {
@@ -136,4 +140,15 @@ footer a {
 
 footer a:visited {
     color: #0088cc;
+}
+
+
+/* Test area */
+
+.overlay1 {
+    background: url('img/promo_iphone5s.jpg') no-repeat;
+}
+
+.overlay1:hover {
+    background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%), url('img/promo_iphone5s.jpg') no-repeat;
 }
